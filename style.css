@@ -1,0 +1,81 @@
+/*Start:  17:19 */
+/* End:  17:53 */
+:root {
+    /* Colors */
+    
+    /* Primary */
+    --accent-100: hsl(193, 38%, 86%);
+    --accent-200: hsl(150, 100%, 66%);
+    
+    /* Neutural */
+    --clr-100: hsl(217, 19%, 38%);
+    --clr-200: hsl(217, 19%, 24%);
+    --clr-300: hsl(218, 23%, 16%);
+
+    /* Fonts */
+    --ff: 'Manrope', sans-serif;
+    --fs-l: 28px;
+    --fw: 800;
+
+}
+
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img {
+    max-width: 100%;
+}
+body {
+    font-family: var(--ff);
+    min-height: 100vh;
+    background-color: var(--clr-300);
+    display: grid;
+    place-content: center;
+}
+main {
+    background-color: var(--clr-200);
+    width: min(60em, 90%);
+    margin-inline: auto;
+    padding: 2em 1.5em 4em;
+    border-radius: .5em;
+    display: grid;
+    gap: 1em;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 0 5em var(--clr-300);
+}
+.title {
+    color: var(--accent-200);
+    font-size: small;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+.advice-text {
+    color: var(--accent-100);
+    font-size: var(--fs-l);
+    font-weight: var(--fw);
+    line-height: 1.4;
+}
+button {
+    border: none;
+    padding: 1.5em;
+    border-radius: 50%;
+    width: fit-content;
+    background-color: var(--accent-200);
+    position: absolute;
+    bottom: -2.5em;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 0 var(--accent-200);
+    transition: box-shadow .3s;
+}
+button:hover {
+    box-shadow: 0 0 2em var(--accent-200);
+}
+button:active {
+    box-shadow: 0 0 3.5em var(--accent-200);
+}
